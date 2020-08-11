@@ -157,7 +157,9 @@ public abstract class FelixPlatformBuilder
             this.appendFrameworkStorage( context, writer );
             // execution environments
             {
-                writer.append( Constants.FRAMEWORK_EXECUTIONENVIRONMENT, context.getExecutionEnvironment() );
+                if( context.getExecutionEnvironment() != null && !context.getExecutionEnvironment().isEmpty()) {
+                    writer.append(Constants.FRAMEWORK_EXECUTIONENVIRONMENT, context.getExecutionEnvironment());
+                }
             }
             // boot delegation packages
             {
@@ -169,7 +171,9 @@ public abstract class FelixPlatformBuilder
             }
             // system packages
             {
-                writer.append( Constants.FRAMEWORK_SYSTEMPACKAGES, context.getSystemPackages() );
+                if( context.getExecutionEnvironment() != null &&  !context.getExecutionEnvironment().isEmpty()) {
+                    writer.append(Constants.FRAMEWORK_SYSTEMPACKAGES, context.getSystemPackages());
+                }
             }
 
             if( bundles != null && bundles.size() > 0 )

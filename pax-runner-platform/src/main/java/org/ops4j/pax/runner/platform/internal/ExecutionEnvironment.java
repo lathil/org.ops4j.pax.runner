@@ -179,6 +179,8 @@ class ExecutionEnvironment
         mappings.put( "JavaSE-1.7".toUpperCase(), "JavaSE-1.7.profile" );
         mappings.put( "J2SE-1.8".toUpperCase(), "JavaSE-1.8.profile" );
         mappings.put( "JavaSE-1.8".toUpperCase(), "JavaSE-1.8.profile" );
+        mappings.put( "J2SE-9".toUpperCase(), "JavaSE-9.profile" );
+        mappings.put( "JavaSE-9".toUpperCase(), "JavaSE-9.profile" );
         mappings.put( "PersonalJava-1.1".toUpperCase(), "PersonalJava-1.1.profile" );
         mappings.put( "PersonalJava-1.2".toUpperCase(), "PersonalJava-1.2.profile" );
         mappings.put( "CDC-1.0/PersonalBasis-1.0".toUpperCase(), "CDC-1.0/PersonalBasis-1.0.profile" );
